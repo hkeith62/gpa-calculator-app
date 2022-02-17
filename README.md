@@ -1,2 +1,7 @@
-# gpa-calculator-app
-This final version of the GPA Calculator App for Web-425.
+# GPA Calculator App
+## web-425
+### Contributors
+* Richard Krasso
+* Keith Hall
+#### This repository contains weekly assignments for web-425.
+
