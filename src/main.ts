@@ -2,9 +2,9 @@
 ============================================
 ; Title:  main.ts
 ; Author: Professor Krasso
-; Date: 02/08/2022
+; Date: 02/17/2022
 ; Modified By: Keith Hall
-; Description: main.ts file for the gpa-calculator-app.
+; Description: main.ts file for the gpa-calculator-app3.
 ;===========================================
 */
 import { enableProdMode } from '@angular/core';

@@ -2,9 +2,9 @@
 ============================================
 ; Title: app.module.ts
 ; Author: Professor Krasso
-; Date: 02/08/2022
+; Date: 02/17/2022
 ; Modified By: Keith Hall
-; Description: Main app module for GPA-Calculator App2.
+; Description: Main app module for GPA-Calculator App3.
 ;===========================================
 */
 import { NgModule } from '@angular/core';

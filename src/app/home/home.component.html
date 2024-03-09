@@ -1,33 +1,34 @@
 <!--
-    Title: base-layout.component.html
+    Title: home.component.html
     Author: Professor Krasso
     Date: 02/08/2022
     Modified By: Keith Hall
-    Description: HTML markup file for the base-layout component.
+    Description: HTML markup file for the home component.
 -->
 <div fxLayout="row wrap" fxLayoutGap="20px">
   <div class="grade-form" fxFlex>
     <mat-card class="mat-elevation-z8">
 
       <mat-card-title>Grade Entry</mat-card-title>
-
       <mat-card-content>
-        <form fxLayout="column" fxLayoutGap="16px" [formGroup]= "transcriptForm"
-        (ngSubmit)="onSubmit($event);transcriptForm.reset()">
+        <form fxLayout="column" fxLayoutGap="16px">
           <mat-form-field fxFlex appearance="fill">
             <mat-label>Course *</mat-label>
-            <input type="text" name="txtCourse" required id="txtCourse" matInput formControlName = "course">
+             <mat-select [(ngModel)]="transcriptEntry.course" name="selectCourse">
+              <mat-option *ngFor="let course of selectableCourses" [value]="course">
+                {{ course }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
-
-          <mat-form-field fxFlex appearance="fill">
+           <mat-form-field fxFlex appearance="fill">
             <mat-label>Grade *</mat-label>
-            <mat-select formControlName="grade" required name="selectGrade">
+             <mat-select [(ngModel)]="transcriptEntry.grade" name="selectGrade">
               <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
                 {{ grade }}
               </mat-option>
             </mat-select>
           </mat-form-field>
-          <button type="submit" [disabled]="!transcriptForm.valid" mat-raised-button color="primary">Save</button>
+          <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
         </form>
       </mat-card-content>
     </mat-card>
@@ -41,9 +42,12 @@
         <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
       </mat-card-content>
     </mat-card>
+
   </div>
 </div>
+
 <br /><br />
+
 <div fxLayout="column" fxLayoutGap="20px">
   <div fxFlex class="gpa">
     <button mat-button color="primary" (click)="calculateResults()">Calculate GPA</button>

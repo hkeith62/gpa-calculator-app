@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date: 02/08/2022
 ; Modified By: Keith Hall
-; Description: component.spec.ts file for gpa-calculator-app.
+; Description: component.spec.ts file for not-found component.
 ;===========================================
 */
 import { ComponentFixture, TestBed } from '@angular/core/testing';

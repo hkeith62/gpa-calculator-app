@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date: 02/06/2022
 ; Modified By: Keith Hall
-; Description: component.ts file for the base-layout component of the gpa calculator.
+; Description: component.ts file for the base-layout component of the gpa calculator3.
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
@@ -18,11 +18,8 @@ import { Router } from '@angular/router';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  assignment: string;
-
+ 
   constructor(private cookieService: CookieService, private router: Router) {
-
-    this.assignment = 'GPA Calculator';
   }
 
   ngOnInit(): void {

@@ -1,3 +1,12 @@
+ /*
+============================================
+; Title: sign-in service.ts
+; Author: Professor Krasso
+; Date: 02/17/2022
+; Modified By: Keith Hall
+; Description: sign-in service logic gpa calculator app3.
+;===========================================
+*/
 import { Injectable } from '@angular/core';
 
 @Injectable({

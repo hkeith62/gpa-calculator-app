@@ -2,9 +2,9 @@
 ============================================
 ; Title: app.component.spec.ts
 ; Author: Professor Krasso
-; Date: 02/08/2022
+; Date: 02/17/2022
 ; Modified By: Keith Hall
-; Description: main component.spec.ts file for gpa-calculator-app.
+; Description: main component.spec.ts file for gpa-calculator-app3.
 ;===========================================
 */
 import { TestBed } from '@angular/core/testing';
@@ -29,16 +29,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gpa-calculator-app'`, () => {
+  it(`should have as title 'gpa-calculator-app3'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gpa-calculator-app');
+    expect(app.title).toEqual('gpa-calculator-app3');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('gpa-calculator-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('gpa-calculator-app3 app is running!');
   });
 });

@@ -1,7 +1,16 @@
+ /*
+============================================
+; Title: sign-in.component.ts
+; Author: Professor Krasso
+; Date: 02/20/2022
+; Modified By: Keith Hall
+; Description: component.ts file for the sign-in component of the gpa calculator3.
+;===========================================
+*/
 import { Component, OnInit } from '@angular/core';
 import { SignInService } from '../sign-in.service';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { registerLocaleData } from '@angular/common';
 
@@ -20,17 +29,12 @@ export class SignInComponent implements OnInit {
     this.errorMessage = '';
     this.signInForm = this.fb.group ({
 
-      studentId: ['', Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])]
+      studentId: ''
     })
   }
 
   ngOnInit(): void {
   }
-
-  get form() {
-    return this.signInForm.controls;
-  }
-
   onSubmit() {
 
     const formValues = this.signInForm.value;

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\auth-layout",
+    "\\src\\app\\base-layout",
+    "\\src\\app\\gpa",
+    "\\src\\app\\grade-summary",
+    "\\src\\app\\home",
+    "\\src\\app\\sign-in"
+  ],
+  "PreviewInSolutionExplorer": false
+}
