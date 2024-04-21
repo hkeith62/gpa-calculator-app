@@ -1,0 +1,25 @@
+ /*
+============================================
+; Title: sign-in.component.css
+; Author: Professor Krasso
+; Date: 02/20/2022
+; Modified By: Keith Hall
+; Description: CSS file for the sign-in component of the gpa calculator3.
+;===========================================
+*/
+.sign-in-container {
+  width: 35%;
+  margin: 9% auto;
+}
+
+.sign-in-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.msg-error {
+  margin: 10px 0px;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
